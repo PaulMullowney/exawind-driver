@@ -57,3 +57,4 @@ endfunction(add_test_r)
 # Regression tests
 #=============================================================================
 add_test_r(sphere)
+add_test_r(sphere_100k)
