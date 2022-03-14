@@ -1,0 +1,22 @@
+# Example input file
+
+exawind:
+  nalu_wind_inp:
+    - sphere_100k-nalu.yaml
+  amr_wind_inp: sphere_100k-amr.inp
+  num_timesteps: 100
+
+  # Variables for overset exchange
+  nalu_vars:
+    - velocity
+    - pressure
+    - turbulent_ke
+    - specific_dissipation_rate
+
+  amr_cell_vars:
+    - velocity
+    - tke
+    - sdr
+
+  amr_node_vars:
+    - p
